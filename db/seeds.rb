@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Product.delete_all
+
+i = 0
+while i < 676
+
+    prod_created = Product.create( :title => Faker::FunnyName.name,
+        :description => Faker::MostInterestingManInTheWorld.quote,
+        :price => Faker::Number.number(2),
+        :stock_quantity => Faker::Number.number(3))
+
+        i += 1
+end
