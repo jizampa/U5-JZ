@@ -1,4 +1,7 @@
 <h1> ALL PRODUCTS </h1>
+<h3>The total number of products in your database: <%= @productCount %></h3>
+<h3>The average price of products in your database: <%= @average %></h3>
+<h3>The quantity of stock you are holding summed over all items: <%= @totalStock %></h3>
 <% @products.each do |item| %>
 <p> Product Title: <%= item.title %></p>
 <ul>
